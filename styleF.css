@@ -1,0 +1,280 @@
+body{
+	background:#86D977;
+	margin:0;
+	padding:0;
+	
+}
+.log{
+	width:220px;
+	padding:200px;
+	padding-left:75px;
+	padding-top:20px;
+}
+header{
+	background-color:#80CA8C;
+    width:100%;
+	height:135px;
+}
+header nav ul li{
+	display:inline-block;
+	position:relative;
+	top:-315px;
+	left:650px;
+}
+
+header nav ul li:hover{
+	background:#EAFAF1;
+}
+	
+header nav ul li a{
+	display:block;
+	padding:30px;
+	list-style:none;
+	text-decoration:none;
+	color:#17202A;
+	font-family:arial;
+	font-size:5mm
+}
+
+header nav ul li a span{
+	margin-right:15px;
+}
+
+.cover{
+	position:relative;
+	z-index:50;
+	top:-28px;
+	color:#FFFFFF;
+	line-height:30px;
+	text-align:center;
+	font-family:arial;
+	word-spacing:1px;
+	background-image:url(fime.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-color:rgba(0,0,0,0.5);
+	background-blend-mode:darken;
+	height:383px;
+} 
+h1{
+	font-size:9mm;
+	padding-top:130px;
+}
+.emergente{
+	margin-bottom:4px;
+	height:20px;
+	padding:20px;
+	background:#B7EC92;
+	border-radius: 3px;
+	font-family:'Monserrat',sans-serif;
+	font-size:16px;
+	cursor:pointer;
+	transition: .3s easy all;
+}
+
+
+section div a{
+	text-decoration:none;
+	font-family:arial;
+	color:#FFFFFF;
+}
+.uanl:hover{
+	color:#17202A;
+	background-color:#FFFFFF;
+}
+  
+h3{
+	display:block;
+	position:relative;
+	z-index:100;
+	top:-28px;
+	margin:0;
+	vertical-align:middle;
+	padding:150px;
+	color:#FFFFFF;
+	text-align:center;
+	font-family:arial;
+	font-size:7mm;
+	word-spacing:10px;
+	background-color:#C3F6CB;
+	background-image:url(entrada2.jpeg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-color:rgba(0,0,0,0.6);
+	background-blend-mode:darken;
+}
+
+.tiposdetramites{
+	background-color:#1E281F ;
+	position:relative;
+	top:-45px;
+	width:100%;
+	height:92px;
+}
+section nav div ul{
+	list-style:none;
+}
+section nav div ul li{
+	display:inline-block;
+	position:relative;
+    padding:35px;
+}
+section nav div ul li:hover{
+	background-color:#29EB07 ;
+}
+
+section nav div ul li b{
+	color:#FFFFFF;
+	font-family:arial;
+	font-size:5mm;
+	display:block;
+
+}
+h4{
+	margin:0;
+	background-color:#86D977;
+	position:relative;
+	top:-68px;
+	width:100%;
+	height:100px;
+	font-family:arial;
+	font-size:7mm;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:100px;
+}
+
+form{
+	background-color:#86D977;
+	display:block;
+	position:relative;
+	z-index:300;
+	padding-bottom:50px;
+	width:50%;
+	top:-80px;
+    padding-left:30%;
+	
+}
+input{
+	padding:7px;
+	width:50%;
+}
+input::placeholder{
+	margin:0 auto;
+	font-size:4mm;
+}   
+.button{
+	padding:10px;
+	width:20%;
+}
+form span{
+	padding:10px;
+}
+form b p{
+	position:relative;
+	display:inline-block;
+	padding-right:20px;
+	padding-top:20px;
+}
+.mat{
+	width:60%;
+}
+.cont{
+	width:59%;
+}
+.nom{
+	width:63%;
+}
+.numtar{
+	width:52%;
+}
+.correo{
+	width:54%;
+}
+.pago{
+	width:54%;
+}
+footer{
+	background-color:#239B56;
+	left:50px;
+	height:100px;
+	padding-left:50%px;
+	text-align:center;
+}
+footer span{
+	position:relative;
+	display:inline-block;
+	padding:20px;
+}
+.overlay{
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	z-index: 1000;
+	visibility:hidden;
+}
+
+.overlay.active{
+	visibility: visible;
+}
+.popup{
+	background:#f8f8f8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family:'Monserrat',sans-serif;
+	padding: 20px;
+	text-align:center;
+	width:600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+.popup .btn-cerrar-popup{
+	font-size: 16px;
+	line-height:16px;
+	display:block;
+	text-align:right;
+	color:#BBBBBB;
+	transition: .3 ease all;
+}
+.popup .btn-cerrar-popup:hover{
+	color:#000;
+}
+.popup h5{
+	font-size:33px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	opacity: 0; 
+}
+.popup h6{
+	font-size:26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+
+.popup.active{
+	opacity:1;
+	transform:scale(1);
+}
+.popup.active h5{
+	animation: titulo 1s ease .5s forwards;
+}
+@keyframes titulo{
+	from{
+		transform: translateY(-25px);
+		opacity: 0;
+	}
+	to{
+		transform:translateY(0);
+		opacity: 1;
+	}
+}
